@@ -7,8 +7,13 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            FizzBuzzer fizzBuzzer = new FizzBuzzer();
-            fizzBuzzer.GetBuzzer(15);
+            while (true)
+            {
+                Console.WriteLine("\nPlease enter a number: ");
+                int userInput = int.Parse(Console.ReadLine());
+                FizzBuzzer fizzBuzzer = new FizzBuzzer();
+                Console.WriteLine(fizzBuzzer.GetBuzzer(userInput));
+            }  
         }
     }
 }
