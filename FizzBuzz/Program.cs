@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FizzBuzz_Library;
+using System;
 
 namespace FizzBuzz
 {
@@ -6,7 +7,8 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FizzBuzzer fizzBuzzer = new FizzBuzzer();
+            fizzBuzzer.GetBuzzer(15);
         }
     }
 }
